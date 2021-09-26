@@ -1,0 +1,39 @@
+// Utils
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/breakpoints";
+@import "./utils/utils";
+
+// Base
+@import "./base/fonts";
+@import "./base/base";
+@import "./base/resets";
+@import "./base/typography";
+
+// Components
+@import "./components/loader";
+@import "./components/buttons";
+@import "./components/hero";
+@import "./components/search-bar";
+@import "./components/hotel-grid";
+@import "./components/cta";
+@import "./components/select";
+@import "./components/message-card";
+@import "./components/form-messages";
+@import "./components/forms";
+@import "./components//statistics";
+@import "./components/bookings";
+
+// Layout
+@import "./layout/navigation";
+@import "./layout//login-modal";
+@import "./layout/footer";
+
+// Pages
+@import "./pages/home";
+@import "./pages/dashboard-home";
+@import "./pages/places-page";
+@import "./pages/hotel-details";
+@import "./pages/404";
+@import "./pages/contact-us";
+@import "./pages/booking";

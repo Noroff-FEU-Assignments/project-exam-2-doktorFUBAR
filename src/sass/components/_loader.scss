@@ -1,0 +1,12 @@
+.loader {
+  color: $color-black;
+  z-index: 99999;
+  display: grid;
+  place-items: center;
+
+  &__svg {
+    width: 10rem;
+    height: 10rem;
+    display: inline-block;
+  }
+}

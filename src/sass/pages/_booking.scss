@@ -1,0 +1,18 @@
+.booking {
+  &__header {
+    @include flex-center;
+
+    margin-top: 10rem;
+    padding: 5%;
+  }
+
+  &__image {
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 1.5rem;
+  }
+
+  h1 {
+    margin-top: 2rem;
+  }
+}

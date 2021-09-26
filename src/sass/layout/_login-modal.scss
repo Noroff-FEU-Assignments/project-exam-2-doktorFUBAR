@@ -1,0 +1,106 @@
+.modal-backdrop {
+  @include flex-center;
+
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+  cursor: pointer;
+}
+
+.modal {
+  @include flex-center;
+  justify-content: space-evenly;
+
+  border-radius: 1.5rem;
+  background: $color-white;
+  height: 90vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: fixed;
+  z-index: 9999;
+  width: 90%;
+
+  @include media-breakpoint-up(mob) {
+    flex-direction: row;
+    height: 70vh;
+    width: 80%;
+  }
+
+  &__left {
+    border-radius: 1.5rem 1.5rem 0 0;
+    display: grid;
+    place-items: center;
+    padding: 3rem;
+    background: $color-cabaret;
+    height: 60%;
+    width: 100%;
+    img {
+      width: 60%;
+    }
+
+    @include media-breakpoint-up(mob) {
+      width: 50%;
+      border-radius: 1.5rem 0 0 1.5rem;
+      height: 100%;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+
+  &__right {
+    display: grid;
+    place-items: center;
+    width: 50%;
+    height: 100%;
+
+    form {
+      @include flex-center;
+
+      height: 100%;
+      margin: 0 auto;
+      width: 100%;
+
+      @include media-breakpoint-up(mob) {
+        width: 70%;
+      }
+    }
+
+    fieldset {
+      border: none;
+    }
+
+    input {
+      border: none;
+      background: $color-gray-bright;
+      padding: 1.5rem 2rem;
+      border-radius: 1.5rem;
+      margin: 2rem 0;
+      width: 100%;
+    }
+
+    button {
+      margin-top: 2rem;
+      width: 100%;
+    }
+  }
+
+  .modal-close {
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 4rem;
+    margin: 1rem;
+  }
+}

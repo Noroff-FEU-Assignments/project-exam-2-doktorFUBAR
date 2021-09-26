@@ -1,0 +1,18 @@
+footer {
+  @include flex-center;
+
+  background: $color-black;
+  color: $color-white;
+  border-radius: 1.5rem 1.5rem 0 0;
+  padding: 2rem;
+  width: 100%;
+  flex: 0;
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 20rem;
+    font-size: 3rem;
+  }
+}
